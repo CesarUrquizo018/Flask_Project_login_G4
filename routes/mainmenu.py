@@ -10,8 +10,5 @@ def mainmenu():
     if request.method == 'POST':
                 session.clear()
                 return redirect(url_for('index.index'))
-
-@bp.route('/')
-@login_required
-def mainmenu():
     return rt("mainmenu.html")
+

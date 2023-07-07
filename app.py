@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-from flask import Flask
-=======
 from flask import Flask, session
->>>>>>> c86f0b439ec6531db697860263277189ddd3c334
 from utils.config import Config
 
 from routes import login, index, portal, vista, mainmenu
