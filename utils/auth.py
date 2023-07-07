@@ -7,5 +7,9 @@ def login_required(view):
         if 'logged_in' in session:
             return view(*args, **kwargs)
         else:
+<<<<<<< HEAD
             return redirect(url_for('portal.portal'))
+=======
+            return redirect(url_for('login.login'))
+>>>>>>> c86f0b439ec6531db697860263277189ddd3c334
     return wrapped_view
