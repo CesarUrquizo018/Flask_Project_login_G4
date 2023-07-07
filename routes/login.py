@@ -11,8 +11,7 @@ def login():
         email = request.form['email']
         password = request.form['password']
 
-        usuario = Usuario.query.filter_by(user_name=email).first()
-
+        usuario = Usuario.query.filter_by(user_name=f"{email}@condosa.com").first()
         if usuario:
             d_password = usuario.password
             if password == d_password:
