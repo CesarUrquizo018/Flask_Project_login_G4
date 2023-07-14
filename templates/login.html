@@ -2,7 +2,7 @@
 
 {% block body %}
 
-<div class="w-25 container">
+<div class="w-25 container py-lg-5">
     <main class="form-signin text-center">
       <form method="POST" action="{{ url_for('login.login') }}">
         <img class="mb-4" src="{{ url_for('static', filename='img/casa.png') }}" alt="" width="72" height="57">
@@ -10,7 +10,7 @@
         <div class="input-group mb-3">
           <input type="text" name="email" class="form-control custom-input" id="floatingInput" placeholder="Usuario">
           <span class="input-group-text">@condosa.com</span>
-        </div>
+        </div>
         <div class="input-group mb-3">
           <input type="password" name="password" class="form-control custom-input" id="floatingPassword" placeholder="Contraseña">
         </div>
@@ -23,6 +23,10 @@
         <p class="mt-5 mb-3 text-muted">© 2023 CONDOSA. Todos los derechos reservados</p>
       </form>
     </main>
+  </div>
+  <div class="container py-lg-5">
+  </div>
+  <div class="container py-lg-3">
   </div>
 
   <style>

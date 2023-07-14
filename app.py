@@ -1,4 +1,4 @@
-from flask import Flask, session
+from flask import Flask
 from utils.config import Config
 
 from routes import login, index, portal, vista, mainmenu, infoCondosa
